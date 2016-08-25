@@ -1,3 +1,5 @@
+Forked to fix up file paths.
+
 # direwolf
 A Vim colorscheme, inspired to some extent by Steve Losh's [{bad,good}wolf](https://github.com/sjl/badwolf).
 
