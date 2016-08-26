@@ -11,18 +11,18 @@ hi ColorColumn gui=NONE guifg=NONE guibg=#f5f5f5
 hi Comment gui=italic guifg=#969696 guibg=NONE
 hi Conceal gui=NONE guifg=#707070 guibg=NONE
 hi Conditional gui=NONE guifg=#4a4a4a guibg=NONE
-hi Constant gui=NONE guifg=#707070 guibg=NONE
+hi Constant gui=NONE guifg=#437070 guibg=NONE
 hi Cursor gui=reverse guifg=#649735 guibg=NONE
 hi CursorColumn gui=NONE guifg=NONE guibg=#f5f5f5
-hi CursorLine gui=NONE guifg=NONE guibg=#dbdbdc
+hi CursorLine gui=NONE guifg=NONE guibg=#dbdbdb
 hi CursorLineNr gui=NONE guifg=#969696 guibg=NONE
 hi DiffAdd gui=NONE guifg=NONE guibg=#edf2ed
-hi DiffChange gui=NONE guifg=NONE guibg=#ededf2
+hi DiffChange gui=NONE guifg=NONE guibg=#dcdcf2
 hi DiffDelete gui=NONE guifg=NONE guibg=#ffd7d6
-hi DiffText gui=NONE guifg=NONE guibg=#e3e3e3
+hi DiffText gui=NONE guifg=NONE guibg=#d3d3f3
 hi Directory gui=NONE guifg=#4a4a4a guibg=NONE
 hi Error gui=NONE guifg=NONE guibg=#ffd7d6
-hi ErrorMsg gui=NONE guifg=#be2349 guibg=#f6eff0
+hi ErrorMsg gui=NONE guifg=#c3224b guibg=#f6eff0
 hi FoldColumn gui=NONE guifg=#c2c2c2 guibg=NONE
 hi Folded gui=NONE guifg=#969696 guibg=#f8f8f8
 hi Ignore gui=NONE guifg=NONE guibg=NONE
@@ -50,6 +50,8 @@ hi SpellRare gui=undercurl guisp=NONE guifg=NONE guibg=#ededed
 hi Statement gui=bold guifg=#4a4a4a guibg=NONE
 hi StatusLine guifg=#262626 guibg=#dedede gui=NONE
 hi StatusLineNC guifg=#969696 guibg=#dedede gui=NONE
+hi User1 guifg=#262626 guibg=#dedede gui=bold
+hi User2 guifg=#262626 guibg=#d1d1d1 gui=NONE
 hi StorageClass gui=NONE guifg=#4a4a4a guibg=NONE
 hi String gui=NONE guifg=#707070 guibg=#f8f8f8
 hi TabLine gui=NONE guifg=#141326 guibg=#f5f3f7
@@ -60,10 +62,16 @@ hi Todo gui=standout guifg=NONE guibg=NONE
 hi Type gui=bold guifg=#4a4a4a guibg=NONE
 hi Underlined gui=NONE guifg=NONE guibg=NONE gui=underline
 hi VertSplit gui=NONE guifg=#e3e3e3 guibg=NONE
-hi Visual gui=NONE guifg=NONE guibg=#b3d6ff
+hi Visual gui=NONE guifg=NONE guibg=#add5ff
 hi VisualNOS gui=NONE guifg=NONE guibg=NONE
 hi WarningMsg gui=NONE guifg=#c3224b guibg=#f6eff0
 hi WildMenu gui=NONE guifg=NONE guibg=#d1d1d1
 hi lCursor gui=NONE guifg=NONE guibg=NONE
 hi Identifier gui=NONE guifg=NONE guibg=NONE
 hi PreProc gui=NONE guifg=NONE guibg=NONE
+
+hi! link tomlTable Constant
+
+hi! link xmlAttrib Constant
+hi! link xmlTagName Statement
+hi! link xmlEndTag Statement
